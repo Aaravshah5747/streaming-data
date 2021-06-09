@@ -11,7 +11,10 @@
     "tdd": "mocha --reporter min --require ts-node/register --watch-files tests/ --watch-files lib/ --watch --recursive tests/*.ts",
     "prepublish": "npm run build"
   },
-  "repository": "https://github.com/SocialBlade/socialblade-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialBlade/socialblade-js.git"
+  },
   "bugs": {
     "url": "https://github.com/SocialBlade/socialblade-js/issues"
   },
@@ -33,5 +36,24 @@
     "prettier": "^2.1.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.17.0",
+    "aws-sdk": "^2.912.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "express": "^4.17.1",
+    "gapi": "0.0.3",
+    "google-auth-library": "^7.1.1",
+    "googleapis": "^73.0.0",
+    "mysql": "^2.18.1",
+    "node-csv": "^0.1.2",
+    "socialblade": "^1.0.0"
+  },
+  "homepage": "https://github.com/SocialBlade/socialblade-js#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
   }
 }
